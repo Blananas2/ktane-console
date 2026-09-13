@@ -45,11 +45,6 @@ public class consoleScript : MonoBehaviour {
     private List<int> chosenItems = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24 };
     private List<int> chosenWeapons = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24 };
 
-    // Deliberately random as shit numbers
-    const float INF =   8164259999999999f;
-    const float NA =  0.0000000000118428f;
-    const float nINF = -8164259999999999f;
-
     public class Enemy
     {
         public string NAME { get; set; }
@@ -175,20 +170,20 @@ public class consoleScript : MonoBehaviour {
         textOnModule = "> $";
 
         Enemy enemy0 = new Enemy("Def", 905, 90000000, 11, 0, 1.2f, 20000000000);
-        Enemy enemy1 = new Enemy("Sentinel of Kanye", 420, INF, 5, 9.8f, nINF, 1000000);
+        Enemy enemy1 = new Enemy("Sentinel of Kanye", 420, 482000, 5, 9.8f, -612327, 1000000);
         Enemy enemy2 = new Enemy("Bananaduck", 80, 7, 1, 3, 0.01f, 127);
         Enemy enemy3 = new Enemy("Lil Uzi Vert", 99, 42, 8, 7.6f, 0.05f, 665);
         Enemy enemy4 = new Enemy("Shoebill", -1, -1, -1, -1, -1, -1);
         Enemy enemy5 = new Enemy("Module Rick", 60, 69, 3, 0, 1, 21);
-        Enemy enemy6 = new Enemy("Giant Enemy Spider", 100, 100, nINF, 0.1f, 0.5f, 8);
+        Enemy enemy6 = new Enemy("Giant Enemy Spider", 100, 100, -612327, 0.1f, 0.5f, 8);
         Enemy enemy7 = new Enemy("Enemy Spider", 10, 1, 7, 1, 0.375f, 4);
-        Enemy enemy8 = new Enemy("Small Enemy Spider", 1, 0.01f, INF, 10, 0.25f, 2);
-        Enemy enemy9 = new Enemy("Microscopic Enemy Spider", 0.1f, 0.0001f, NA, 100, 0.125f, 1);
+        Enemy enemy8 = new Enemy("Small Enemy Spider", 1, 0.01f, 482000, 10, 0.25f, 2);
+        Enemy enemy9 = new Enemy("Microscopic Enemy Spider", 0.1f, 0.0001f, -2, 100, 0.125f, 1);
         Enemy enemy10 = new Enemy("Shrieking White-Hot\nSphere of Pure Rage", 140, 1000000, 1, 100, 0, 20000000000);
         Enemy enemy11 = new Enemy("ObjCount", -1, 10000000, 7, 1, 0.029f, 5000000000);
         Enemy enemy12 = new Enemy("The Impostor", 135, 500, 5, 4, 0.06f, 25);
         Enemy enemy13 = new Enemy("The Z-Fighter", 68, 1000, 5, 3, 0.6f, 100000);
-        Enemy enemy14 = new Enemy("DC 'Splode", 300, 10000000, INF, 0.01f, 0, 6900);
+        Enemy enemy14 = new Enemy("DC 'Splode", 300, 10000000, 482000, 0.01f, 0, 6900);
         Enemy enemy15 = new Enemy("Unicorn", 1, 2, 3, 4, 5, 6);
         Enemy enemy16 = new Enemy("Ablert Iensten", 160, 42, 4, 0.001f, 0.02f, 56);
         Enemy enemy17 = new Enemy("Brain Shoe", 88, 2560, 9, 1, 0.01f, 51);
@@ -196,8 +191,8 @@ public class consoleScript : MonoBehaviour {
         Enemy enemy19 = new Enemy("Usaying bolt", 92, 256, 5, 10.4f, -0.01f, 73);
         Enemy enemy20 = new Enemy("Ken Tank", 61, 0.001f, 0, 0.06f, 0.01f, 39);
         Enemy enemy21 = new Enemy("Ninja (Not That One)", 86, 4, 6, 40, 0.04f, 0);
-        Enemy enemy22 = new Enemy("TradeMark", NA, NA, NA, NA, NA, NA);
-        Enemy enemy23 = new Enemy("AlfaGolf", INF, 0, 0, 0, 0, 1000);
+        Enemy enemy22 = new Enemy("TradeMark", -2, -2, -2, -2, -2, -2);
+        Enemy enemy23 = new Enemy("AlfaGolf", 482000, 0, 0, 0, 0, 1000);
         Enemy enemy24 = new Enemy("aeiou", 1, 5, 9, 15, 21, 25);
         Enemy enemy25 = new Enemy("spekvil", 66, 66, 6, 6.66f, 666, 66);
         Enemy enemy26 = new Enemy("stick bug lol", 98, 7, 1, 2, 0.01f, 60);
@@ -236,16 +231,16 @@ public class consoleScript : MonoBehaviour {
         }
 
         Hero hero0 = new Hero("Tim Wi", 1.8f, 82, 30, 60, 80, 52, 13);
-        Hero hero1 = new Hero("Kanye West", 1.73f, 75, 43, 180, 1000, NA, NA);
+        Hero hero1 = new Hero("Kanye West", 1.73f, 75, 43, 180, 1000, -2, -2);
         Hero hero2 = new Hero("Bob", 1.828f, 67, 23, 70, 0, 42.33f, -83.12f);
         Hero hero3 = new Hero("Simon", 1.69f, 53, 19, 100, 10, 41.8f, -88.15f);
         Hero hero4 = new Hero("Zean", 1.7f, 57, 15, 16, 0.1f, 0, 0);
         Hero hero5 = new Hero("RobWald", 2.72f, 79, 89, 66, 12, 42, -180);
         Hero hero6 = new Hero("ok fatty", 1.2f, 442, 88, 54, 43, 13, 52);
         Hero hero7 = new Hero("Henry Stick", 1.5f, 2, 24, 0, 0, 1, 2);
-        Hero hero8 = new Hero("F0rk", 0.2f, 0.01f, NA, 0, 0, 35.8f, -104.2f);
+        Hero hero8 = new Hero("F0rk", 0.2f, 0.01f, -2, 0, 0, 35.8f, -104.2f);
         Hero hero9 = new Hero("lambrghiiiiiii", 1, 907, 57, 50, 100, 41.9f, -12.6f);
-        Hero hero10 = new Hero("PILL", 0.01f, 0.001f, NA, 0, 3, NA, NA);
+        Hero hero10 = new Hero("PILL", 0.01f, 0.001f, -2, 0, 3, -2, -2);
         Hero hero11 = new Hero("Mad", 0.3f, 60, 21, 0, 0.1f, 56.1f, 106.3f);
         Hero hero12 = new Hero("Fatrlick77", 1.8f, 70, 16, 77, 7, 32, -100);
         Hero hero13 = new Hero("Drunkle Squeaky", 1.9f, 64, 17, 100, 1000, 41.6f, -71.4f);
@@ -255,12 +250,12 @@ public class consoleScript : MonoBehaviour {
         Hero hero17 = new Hero("U three Hs", 1.6f, 80, 25, 1, 69, 46.2f, -2.2f);
         Hero hero18 = new Hero("Y'darn kids", 1.52f, 59, 100, 30, 5, -25.3f, -133.8f);
         Hero hero19 = new Hero("BIG BIRD", 2, 101, 51, 60, 2, 123, 456);
-        Hero hero20 = new Hero("wee woo wee woo", 65, 555, 2, 200, 200000, nINF, nINF);
+        Hero hero20 = new Hero("wee woo wee woo", 65, 555, 2, 200, 200000, -612327, -612327);
         Hero hero21 = new Hero("hi", 1.55f, 54, 19, 15, 1, 32.2f, -82.9f);
         Hero hero22 = new Hero("Skai", 1.65f, 55, 22, 101, 161, 54.1f, -2.5f);
         Hero hero23 = new Hero("Uncle Sam", 2, 80, 208, 7.4f, 1776, 38.9f, -27.7f);
         Hero hero24 = new Hero("dQw4w9WgXcQ", 1.77f, 58, 54, 84, 49, 55.4f, -1.2f);
-        Hero hero25 = new Hero("HOW", INF, INF, INF, INF, INF, INF, INF);
+        Hero hero25 = new Hero("HOW", 247, 247, 247, 247, 247, 247, 247);
 
         chosenHero = UnityEngine.Random.Range(0,26);
 
@@ -301,21 +296,21 @@ public class consoleScript : MonoBehaviour {
         Location location4 = new Location("Brizal", 999, 100, 999, 0, 999, 999, 999);
         Location location5 = new Location("noisnemiD rorriM", -22, -10, -9.8f, 90, -13, -3, -180);
         Location location6 = new Location("Haway", 38, 0, 1, 0, 0, 0, 1000);
-        Location location7 = new Location("Big Blue C", 21, 200, INF, NA, NA, INF, -29029);
-        Location location8 = new Location("Jup", 49, 50, 100, 11, 111, 1000, NA);
+        Location location7 = new Location("Big Blue C", 21, 200, 64985, -99, -99, 64985, -29029);
+        Location location8 = new Location("Jup", 49, 50, 100, 11, 111, 1000, -99);
         Location location9 = new Location("Shikagoo", 20, 5, 11, 273, 87, 4, 2);
-        Location location10 = new Location("memebigboy", 4, 7, 24, 2, INF, 2299, NA);
+        Location location10 = new Location("memebigboy", 4, 7, 24, 2, 64985, 2299, -99);
         Location location11 = new Location("3Vic3Rom3SieTan", -6, 1, -1, 42, 111, 15, 29029);
-        Location location12 = new Location("where no one\ncan hear you m", -1, 0, -6, 111, 7, 0, INF);
+        Location location12 = new Location("where no one\ncan hear you m", -1, 0, -6, 111, 7, 0, 64985);
         Location location13 = new Location("Smoot", 57, 57, 57, 57, 57, 57, 57);
         Location location14 = new Location("A town called", 21, 6, 9, 68, 14, 2, 487);
         Location location15 = new Location("place go brrrr", -2, 0, 58, 720, 1000, 0, 58);
         Location location16 = new Location("Peed", 27.5f, 22, 5, 76, 87, 3, 98);
         Location location17 = new Location("corton", 100, 100, 7, 1, 5, 16, 5);
         Location location18 = new Location("Not York", 26, 11, 16, 216, 50, 1, 112);
-        Location location19 = new Location("Your mom", 55, 2, 123, nINF, NA, 4, 489);
+        Location location19 = new Location("Your mom", 55, 2, 123, -276, -99, 4, 489);
         Location location20 = new Location("What?", 5, 6, 7, 137, 20, 2.1f, 48);
-        Location location21 = new Location("Literally just a\ncardboard box", 17, 0, 2, 0, 0, 0, NA);
+        Location location21 = new Location("Literally just a\ncardboard box", 17, 0, 2, 0, 0, 0, 47);
         Location location22 = new Location("SUNRISE", 23, 63, 0, 301, 7, 0.4f, 77);
         Location location23 = new Location("ffp", 22.2f, 500, 19.5f, 19, 87, 228.6f, 2.286f);
         Location location24 = new Location("Goergia", 22, 10, 9.8f, 270, 13, 3, 180);
@@ -566,7 +561,7 @@ public class consoleScript : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-        AllText.text = textOnModule.Replace("$", input).Replace("8.16426E+15", "∞").Replace("1.18428E-11", "N/A");
+        AllText.text = textOnModule.Replace("$", input);
         for (int i = 0; i < TheKeys.Count(); i++) {
             if (Input.GetKeyDown(TheKeys[i])) {
                 if (TheLetters[i].ToString() == "<".ToString()) {
